@@ -1,0 +1,43 @@
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    gap: 5vh 5%;
+}
+
+.project-object {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: 25px;
+    background-color: #c4daea;
+}
+
+.project-text {
+    display: flex;
+    padding: 10px;
+    font-family: "LouisGeorgeCafe";
+    color: #23455c;
+    font-size: 12pt;
+}
+
+.project-header {
+    padding-left: 30px;
+    padding-top: 10px;
+    font-family: "TangoSans";
+    color: #23455c;
+    font-size: 20pt;
+}
+
+@font-face {
+    font-family: "LouisGeorgeCafe";
+    src: local("LouisGeorgeCafe"),
+        url(../fonts/LouisGeorgeCafe.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "TangoSans";
+    src: local("TangoSans"), url(../fonts/TangoSans.ttf) format("ttf");
+}

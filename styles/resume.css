@@ -1,0 +1,43 @@
+.pdf {
+    width: 80%;
+    height: 80%;
+}
+
+.pdf-container {
+    display: flex;
+    justify-content: right;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    width: 100;
+    gap: 20px;
+    z-index: 0;
+    margin-top: 10%;
+}
+
+.react-pdf__Page__canvas {
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.download-button {
+    width: 40;
+    color: #7f94a1;
+    font-family: "TangoSans";
+    background: #dff2ff;
+    border: none;
+    font-size: x-large;
+    padding: 6%;
+    border-radius: 25px;
+}
+
+.download-button:hover {
+    background: #b1c1cb;
+    color: #23455c;
+    cursor: pointer;
+}

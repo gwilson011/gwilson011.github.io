@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.Home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    width: 550px;
+    z-index: -5;
+}
+
+.Page-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    width: 60%;
+    height: max-content;
+    justify-content: center;
+}
+
+.Heading-text {
+    font-family: "TangoSans";
+    font-size: 500%;
+    line-height: 80%;
+    color: #23455c;
+    padding-top: 10%;
+}
+
+.Home-outer {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.Heading-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+@font-face {
+    font-family: "TangoSans";
+    src: local("TangoSans"), url(../fonts/TangoSans.ttf) format("ttf");
+}

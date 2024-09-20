@@ -1,0 +1,64 @@
+.About-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 100px;
+}
+
+.About-Container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.About-Bubble {
+    display: flex;
+    align-items: left;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+}
+
+.About-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.About-lovecode {
+    font-family: "TangoSans";
+    font-size: 250%;
+    margin-top: -5%;
+    color: #23455c;
+}
+
+.Inspo-Container {
+    display: flex;
+    flex-direction: column;
+    width: 225vh;
+    background-color: #23455c;
+    height: 100vh;
+}
+.Inspo-Header {
+    display: flex;
+    justify-content: center;
+}
+.Inspo-Body {
+    display: flex;
+    flex-direction: row;
+}
+
+@font-face {
+    font-family: "LouisGeorgeCafe";
+    src: local("LouisGeorgeCafe"),
+        url(../fonts/LouisGeorgeCafe.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "TangoSans";
+    src: local("TangoSans"), url(../fonts/TangoSans.ttf) format("ttf");
+}

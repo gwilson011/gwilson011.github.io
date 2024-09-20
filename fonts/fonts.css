@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "TangoSans";
+    src: local("TangoSans"), url(../../fonts/TangoSans.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "LouisGeorgeCafe";
+    font-style: normal;
+    src: local("LouisGeorgeCafe"),
+        url(../../fonts/LouisGeorgeCafe.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "LouisGeorgeCafe";
+    font-style: bold;
+    src: local("LouisGeorgeCafe-Bold") url(../../fonts/LouisGeorgeCafe-Bold.ttf)
+        format("woff");
+}
