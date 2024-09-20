@@ -5,7 +5,7 @@ export const Bubbles = () => {
         <div className="About-Container">
             <div className="About-Bubble" style={{ marginLeft: 150 }}>
                 <h1 className="font-['LouisGeorgeCafe'] text-black text-lg">
-                    I’m a junior at getting my degree in{" "}
+                    I&apos;m a senior at getting my degree in{" "}
                     <span className="font-['LouisGeorgeCafe-Bold'] text-2xl">
                         computer science
                     </span>
@@ -38,7 +38,7 @@ export const Bubbles = () => {
             </div>
             <div className="About-Bubble">
                 <h1 className="font-['LouisGeorgeCafe'] text-black text-lg">
-                    Beyond coding, you'll find me{" "}
+                    Beyond coding, you&apos;ll find me{" "}
                     <span className="font-['LouisGeorgeCafe-Bold'] text-2xl">
                         painting,
                     </span>{" "}
@@ -57,7 +57,7 @@ export const Bubbles = () => {
                     <span className="font-['LouisGeorgeCafe-Bold'] text-2xl">
                         run
                     </span>
-                    . I'm fueled by{" "}
+                    . I&apos;m fueled by{" "}
                     <span className="font-['LouisGeorgeCafe-Bold'] text-2xl">
                         Dr Pepper
                     </span>{" "}

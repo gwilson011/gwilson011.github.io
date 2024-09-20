@@ -43,7 +43,7 @@ export const Inspiration = () => {
                     }}
                 >
                     <p className="font-['LouisGeorgeCafe'] text-white text-xl">
-                        I’m inspired by people like{" "}
+                        I&apos; inspired by people like{" "}
                         <span className="font-['LouisGeorgeCafe-Bold'] text-2xl">
                             Steve Jobs
                         </span>{" "}
@@ -83,7 +83,7 @@ export const Inspiration = () => {
                 >
                     <p className="font-['LouisGeorgeCafe-Bold'] text-white text-3xl">
                         <a href="http://meghan-barrett.com/blog/2016/09/07/the-poetical-science-of-ada-lovelace/">
-                            "Poetical Science"
+                            &quot;Poetical Science&quot;
                         </a>
                     </p>
                     <p className="font-['LouisGeorgeCafe'] text-white text-xl my-8">
