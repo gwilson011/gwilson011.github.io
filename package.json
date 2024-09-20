@@ -11,14 +11,17 @@
         "deploy": "npm run build && npm run export && gh-pages -d out"
     },
     "dependencies": {
+        "browserify-zlib": "^0.2.0",
         "intersection-observer": "^0.12.2",
         "next": "14.0.4",
+        "process": "^0.11.10",
         "react": "^18",
         "react-dom": "^18",
-        "react-pdf": "^7.7.0",
+        "react-pdf": "^7.7.3",
         "react-scroll-percentage": "^4.3.2",
         "resize-observer-polyfill": "^1.5.1",
         "sass": "^1.69.7",
+        "stream-browserify": "^3.0.0",
         "styled-components": "^6.1.8"
     },
     "devDependencies": {
@@ -26,6 +29,7 @@
         "@types/react": "^18",
         "@types/react-dom": "^18",
         "autoprefixer": "^10.4.16",
+        "canvas": "^2.11.2",
         "eslint": "^8",
         "eslint-config-next": "14.0.4",
         "file-loader": "^6.2.0",

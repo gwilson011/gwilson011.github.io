@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export const Inspiration = () => {
     return (
@@ -16,24 +17,28 @@ export const Inspiration = () => {
             </div>
             <div className="Inspo-Body">
                 <div style={{ marginLeft: 50 }}>
-                    <img
+                    <Image
+                        alt="frame"
                         src={"/images/frame.png"}
+                        width={350}
+                        height={350}
                         style={{
                             marginTop: 100,
                             marginLeft: 50,
-                            width: 350,
                             right: 170,
                         }}
-                    ></img>
-                    <img
+                    ></Image>
+                    <Image
+                        alt="shadow"
                         src={"/images/shadow.png"}
+                        width={300}
+                        height={300}
                         style={{
                             marginTop: 60,
                             marginLeft: 70,
-                            width: 300,
                             right: 150,
                         }}
-                    ></img>
+                    ></Image>
                 </div>
                 <div
                     style={{
@@ -64,15 +69,17 @@ export const Inspiration = () => {
                     </p>
                 </div>
                 <div>
-                    <img
+                    <Image
+                        alt="painting"
                         src={"/images/painting.png"}
+                        width={500}
+                        height={500}
                         style={{
                             marginTop: 50,
                             marginLeft: 30,
-                            width: 500,
                             right: 150,
                         }}
-                    ></img>
+                    ></Image>
                 </div>
                 <div
                     style={{

@@ -13,19 +13,22 @@ const Home = () => {
                     <p className="Heading-text">grace wilson</p>
                 </div>
                 <div>
-                    <img
+                    <Image
                         src="/images/wink.png"
-                        style={{ marginLeft: -100, scale: 1.2 }}
+                        width={500}
+                        height={500}
                         alt="wink"
-                    ></img>
+                    ></Image>
                 </div>
             </div>
             <div className="Home">
-                <img
+                <Image
                     src="/images/signature.png"
-                    style={{ height: 400, marginTop: 80 }}
+                    style={{ marginTop: 100 }}
+                    height={400}
+                    width={400}
                     alt="signature"
-                ></img>
+                ></Image>
             </div>
         </div>
     );

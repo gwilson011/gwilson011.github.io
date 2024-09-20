@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/style.css";
 import "../../styles/projects.css";
 import { ProjectCard } from "../components/project_card";
+import Image from "next/image";
 
 const Projects = () => {
     return (
@@ -10,10 +11,12 @@ const Projects = () => {
                 <p className="Heading-text flex p-10">projects</p>
             </div>
             <div className="project-container">
-                <img
+                <Image
+                    alt="grace doing a project"
                     src={"/images/hearts.png"}
-                    style={{ width: "350px" }}
-                ></img>
+                    width={350}
+                    height={350}
+                ></Image>
                 <ProjectCard
                     title="topo"
                     year="2023"

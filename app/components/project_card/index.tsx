@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+
 export const ProjectCard = ({ ...props }) => {
     const onSource = () => {
         window.open(props.sourceLink, "_blank");
@@ -17,15 +19,17 @@ export const ProjectCard = ({ ...props }) => {
             </div>
             <p className="project-text">{props.desc}</p>
             <div className="flex flex-row gap-3">
-                <img
+                <Image
+                    alt="project image"
                     className="w-[225px] rounded-md p-10"
                     src={props.image}
+                    width={225}
+                    height={225}
                     style={{
-                        width: "225px",
                         borderRadius: "25px",
                         padding: "10px",
                     }}
-                ></img>
+                ></Image>
                 <div className="flex flex-col gap-5 grow justify-center">
                     <button
                         onClick={onSource}

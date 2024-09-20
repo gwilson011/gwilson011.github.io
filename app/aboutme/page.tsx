@@ -7,6 +7,7 @@ import { Bubbles } from "../components/bubbles/index";
 import { Inspiration } from "../components/inspiration/index";
 import SmoothScroll from "../components/horizontal";
 import { SkillDisplay } from "../components/skills";
+import Image from "next/image";
 
 const AboutMe = () => {
     return (
@@ -26,14 +27,12 @@ const AboutMe = () => {
                 >
                     about me
                 </p>
-                <img
+                <Image
+                    alt="grace pointer finger"
                     src={"/images/pointing.png"}
-                    style={{
-                        width: 260,
-                        height: 260,
-                        top: 0,
-                    }}
-                ></img>
+                    width={260}
+                    height={260}
+                ></Image>
             </div>
             <div style={{ marginTop: -250, zIndex: -100 }}>
                 <SmoothScroll>
@@ -44,12 +43,13 @@ const AboutMe = () => {
                             style={{ flexDirection: "row" }}
                         >
                             <Bubbles />
-                            <img
+                            <Image
+                                alt="grace"
                                 src={"/images/me_1.png"}
+                                width={340}
+                                height={550}
                                 style={{
                                     marginTop: 100,
-                                    width: 340,
-                                    height: 550,
                                     marginLeft: -90,
                                 }}
                             />
