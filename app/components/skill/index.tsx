@@ -1,9 +1,13 @@
 "use client";
+import clsx from "clsx";
 
 const Skill = ({ ...props }) => {
     return (
         <div
-            className={`flex rounded-full p-2 bg-${props.color} text-black font-sans`}
+            className={clsx(
+                `flex self-start rounded-xl p-2 px-4 text-white text-lg font-sans`,
+                props.color
+            )}
         >
             {props.skill}
         </div>
