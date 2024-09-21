@@ -13,8 +13,8 @@ if (isGithubActions) {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: "export",
-    basePath: "/nextjs-page",
-    assetPrefix: "/nextjs-page",
+    basePath: "/gwilson011",
+    assetPrefix: "/gwilson011",
     images: { unoptimized: true },
     webpack(config, { nextRuntime }) {
         if (nextRuntime === "nodejs") {
