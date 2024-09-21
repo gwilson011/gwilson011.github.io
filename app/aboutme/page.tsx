@@ -12,21 +12,8 @@ import Image from "next/image";
 const AboutMe = () => {
     return (
         <div className="Page-container">
-            <div className="Heading-container" style={{ width: 880 }}>
-                <p
-                    className="Heading-text"
-                    style={{
-                        marginRight: 300,
-                        position: "fixed",
-                        width: 500,
-                        height: 260,
-                        right: 120,
-                        top: -100,
-                        zIndex: -110,
-                    }}
-                >
-                    about me
-                </p>
+            <div className="flex flex-row justify-end">
+                <p className="Heading-text">about me</p>
                 <Image
                     alt="grace pointer finger"
                     src={"/images/pointing.png"}
@@ -46,8 +33,8 @@ const AboutMe = () => {
                             <Image
                                 alt="grace"
                                 src={"/images/me_1.png"}
-                                width={340}
-                                height={550}
+                                width={360}
+                                height={480}
                                 style={{
                                     marginTop: 100,
                                     marginLeft: -90,

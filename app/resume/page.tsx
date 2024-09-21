@@ -8,7 +8,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 // Set up the worker source for PDF.js
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL}/pdf.worker.js`;
 
 const onButtonClick = () => {
     // Fetching the PDF file
@@ -32,13 +32,15 @@ const Resume = () => {
         import("react-pdf").then((pdfViewer) => {
             setPdfViewer(pdfViewer);
         });
+        console.log(PdfViewer);
     }, []);
 
     if (!PdfViewer) {
+        console.log(PdfViewer);
         return null;
     }
     return (
-        <div className="Page-container bg-white p-10">
+        <div className="flex flex-col ml-[30%] w-[60%] justify-start bg-white h-[1450px] p-10">
             <div className="flex justify-between pr-5">
                 <Image
                     width={300}
@@ -47,13 +49,13 @@ const Resume = () => {
                     alt="Grace bursting from the page"
                 />
                 <div className="button-container">
-                    <p className="Heading-text">Resume</p>
+                    <p className="Heading-text">resume</p>
                     <button onClick={onButtonClick} className="download-button">
-                        Download
+                        download
                     </button>
                 </div>
             </div>
-            <div className="pdf-container">
+            <div className="pdf-container bg-red-100">
                 <PdfViewer.Document file="/resume.pdf">
                     <PdfViewer.Page pageNumber={1} renderTextLayer={false} />
                 </PdfViewer.Document>

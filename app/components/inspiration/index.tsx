@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
+import ImageRotator from "../rotator/index";
 
 export const Inspiration = () => {
     return (
-        <div className="Inspo-Container">
+        <div className="Inspo-Container rounded-2xl">
             <div className="Inspo-Header">
                 <p
                     style={{
@@ -16,27 +17,18 @@ export const Inspiration = () => {
                 </p>
             </div>
             <div className="Inspo-Body">
-                <div style={{ marginLeft: 50 }}>
-                    <Image
-                        alt="frame"
-                        src={"/images/frame.png"}
-                        width={350}
-                        height={350}
-                        style={{
-                            marginTop: 100,
-                            marginLeft: 50,
-                            right: 170,
-                        }}
-                    ></Image>
+                <div
+                    className="flex flex-col justify-center p-12 pl-24"
+                    style={{ marginLeft: 50, marginTop: 230 }}
+                >
+                    <ImageRotator />
                     <Image
                         alt="shadow"
                         src={"/images/shadow.png"}
                         width={300}
                         height={300}
                         style={{
-                            marginTop: 60,
-                            marginLeft: 70,
-                            right: 150,
+                            marginTop: 250,
                         }}
                     ></Image>
                 </div>
@@ -48,7 +40,7 @@ export const Inspiration = () => {
                     }}
                 >
                     <p className="font-['LouisGeorgeCafe'] text-white text-xl">
-                        I&apos; inspired by people like{" "}
+                        I&apos;m inspired by people like{" "}
                         <span className="font-['LouisGeorgeCafe-Bold'] text-2xl">
                             Steve Jobs
                         </span>{" "}

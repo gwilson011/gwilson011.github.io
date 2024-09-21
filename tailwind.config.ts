@@ -17,7 +17,14 @@ const config: Config = {
                 projectCard: "#c4daea",
             },
             fontFamily: {
-                sans: ["TangoSans", "LouisGeorgeCafe", "LouisGeorgeCafe-Bold"],
+                sans: [
+                    "TangoSans",
+                    "LouisGeorgeCafe",
+                    "LouisGeorgeCafe-Bold",
+                    "LouisGeorgeCafe-BoldItalic",
+                    "LouisGeorgeCafe-LightItalic",
+                    "LouisGeorgeCafe-Italic",
+                ],
             },
         },
     },

@@ -5,7 +5,6 @@
 
 .pdf-container {
     display: flex;
-    justify-content: right;
     height: 100vh;
 }
 
