@@ -5,7 +5,7 @@ import ImageRotator from "../rotator/index";
 export const Inspiration = () => {
     return (
         <div className="Inspo-Container rounded-2xl">
-            <div className="Inspo-Header">
+            <div className="Inspo-Header mt-[25px]">
                 <p
                     style={{
                         color: "white",

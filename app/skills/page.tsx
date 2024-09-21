@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Skills = () => {
     return (
-        <div className="Page-container gap-10 relative">
+        <div className="flex flex-col ml-[30%] w-[60%] justify-start gap-10 relative">
             <div className="flex flex-row justify-end">
                 <p className="Heading-text">skills</p>
             </div>

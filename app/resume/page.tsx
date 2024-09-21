@@ -55,7 +55,7 @@ const Resume = () => {
                     </button>
                 </div>
             </div>
-            <div className="pdf-container bg-red-100">
+            <div className="pdf-container">
                 <PdfViewer.Document file="/resume.pdf">
                     <PdfViewer.Page pageNumber={1} renderTextLayer={false} />
                 </PdfViewer.Document>

@@ -7,6 +7,7 @@ import { Bubbles } from "../components/bubbles/index";
 import { Inspiration } from "../components/inspiration/index";
 import SmoothScroll from "../components/horizontal";
 import Image from "next/image";
+import Gallery from "../components/gallery";
 
 const AboutMe = () => {
     return (
@@ -20,7 +21,7 @@ const AboutMe = () => {
                     height={260}
                 ></Image>
             </div>
-            <div style={{ marginTop: -250, zIndex: -100 }}>
+            <div className="gap-10 mt-[-250px]">
                 <SmoothScroll>
                     <div className="thumbnails">
                         <div style={{ width: "25vh" }}></div>
@@ -41,8 +42,9 @@ const AboutMe = () => {
                             />
                         </div>
                         <div style={{ width: "0vh" }}></div>
-                        <Inspiration />
                     </div>
+                    <Inspiration />
+                    <Gallery />
                 </SmoothScroll>
             </div>
         </div>
