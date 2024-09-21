@@ -6,7 +6,6 @@ import "../../styles/styles.scss";
 import { Bubbles } from "../components/bubbles/index";
 import { Inspiration } from "../components/inspiration/index";
 import SmoothScroll from "../components/horizontal";
-import { SkillDisplay } from "../components/skills";
 import Image from "next/image";
 
 const AboutMe = () => {
@@ -43,7 +42,6 @@ const AboutMe = () => {
                         </div>
                         <div style={{ width: "0vh" }}></div>
                         <Inspiration />
-                        <SkillDisplay />
                     </div>
                 </SmoothScroll>
             </div>

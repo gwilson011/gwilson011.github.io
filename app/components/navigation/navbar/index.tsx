@@ -31,6 +31,16 @@ const Navbar = () => {
                         about me
                     </NavLink>
                     <NavLink
+                        href="/skills"
+                        className={
+                            currentRoute == "/skills"
+                                ? "text-darkBlue"
+                                : "text-navGrey"
+                        }
+                    >
+                        skills
+                    </NavLink>
+                    <NavLink
                         href="/resume"
                         className={
                             currentRoute == "/resume"
