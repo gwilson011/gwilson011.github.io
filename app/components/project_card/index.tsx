@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 
-export const ProjectCard = ({ ...props }) => {
+export const ProjectCard = ({ internal = false, ...props }) => {
     const onSource = () => {
-        window.open(props.sourceLink, "_blank");
+        window.open(props.source, "_blank");
     };
-    const onDemo = () => {
-        window.open(props.demoLink, "_blank");
+    const onDemo = (internal: Boolean) => {
+        window.open(props.demo, internal ? "_self" : "_blank");
     };
 
     return (
@@ -38,7 +38,7 @@ export const ProjectCard = ({ ...props }) => {
                         source
                     </button>
                     <button
-                        onClick={onDemo}
+                        onClick={() => onDemo(props.internal)}
                         className="flex p-2 rounded-xl bg-darkBlue justify-center text-lightBlue font-sans"
                     >
                         demo

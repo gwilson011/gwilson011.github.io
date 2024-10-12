@@ -3,13 +3,20 @@
 import React, { useState } from "react";
 import { Nav, NavLink, NavMenu } from "./elements";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
     const currentRoute = usePathname();
+    const onGit = () => {
+        window.open("https://github.com/gwilson011", "_blank");
+    };
+    const onLinked = () => {
+        window.open("https://linkedin.com/in/grace-wilson-688452196", "_blank");
+    };
     return (
-        <>
-            <Nav>
-                <NavMenu>
+        <div className="bg-red-100">
+            <Nav className="fixed flex h-full min-w-[350px] z-[100] items-center left-0 text-right bg-[#dff2ff] gap-4">
+                <NavMenu className="absolute flex items-center -mr-5 flex-col left-[100px] gap-4">
                     <NavLink
                         href="/"
                         className={
@@ -60,9 +67,39 @@ const Navbar = () => {
                     >
                         projects
                     </NavLink>
+                    <div className="">
+                        <div className="flex flex-row gap-3 p-2">
+                            <button
+                                onClick={onGit}
+                                className="w-auto h-auto hover:opacity-50"
+                            >
+                                <Image
+                                    alt="git"
+                                    src={"/images/github.png"}
+                                    width={25}
+                                    height={25}
+                                ></Image>
+                            </button>
+                            <button
+                                onClick={onLinked}
+                                className="w-auto h-auto hover:opacity-50"
+                            >
+                                <Image
+                                    alt="git"
+                                    src={"/images/linked.png"}
+                                    width={25}
+                                    height={25}
+                                ></Image>
+                            </button>
+                        </div>
+                        <span className="text-[#7F94A1] font-louis">
+                            {" "}
+                            gwilson011@gmail.com
+                        </span>
+                    </div>
                 </NavMenu>
             </Nav>
-        </>
+        </div>
     );
 };
 

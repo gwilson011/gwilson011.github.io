@@ -23,8 +23,9 @@ const Projects = () => {
                     image="/images/topo_preview.png"
                     desc="Web application that takes an input number of miles and gives
                 the route with the least amount of elevation gain"
-                    source=""
-                    demo=""
+                    source="https://github.com/gwilson011/topo"
+                    demo="https://gwilson011.github.io/topo"
+                    internal={true}
                 />
                 <ProjectCard
                     title="record swap"
