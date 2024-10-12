@@ -183,9 +183,9 @@ function Topo() {
                             </div>
                         )}
                         <div className="flex text-black text-center w-[280px]">
-                            It's simple. Enter the amount of miles you want to
-                            run. Get a route with minimal elevation gain. Up to
-                            15 miles.
+                            It&apos;s simple. Enter the amount of miles you want
+                            to run. Get a route with minimal elevation gain. Up
+                            to 15 miles.
                         </div>
                     </div>
                 </div>
