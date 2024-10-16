@@ -9,7 +9,7 @@ const SkillDisplay = () => {
                 <div className="p-2 text-4xl text-darkBlue font-sans">
                     front end
                 </div>
-                <div className="flex flex-row gap-3">
+                <div className="flex flex-row gap-3 flex-wrap">
                     <Skill skill="react" color="bg-violet-700" />
                     <Skill skill="typescript" color="bg-orange-400" />
                     <Skill skill="CSS" color="bg-red-600" />
@@ -24,17 +24,17 @@ const SkillDisplay = () => {
                     <div className="p-2 text-4xl text-darkBlue font-sans">
                         back end
                     </div>
-                    <div className="flex flex-row gap-3">
+                    <div className="flex flex-row gap-3 flex-wrap">
                         <Skill skill="Node.js" color="bg-green-700" />
                         <Skill skill="Express" color="bg-yellow-600" />
-                        <Skill skill="CSS" color="bg-neutral-600" />
+                        <Skill skill="PostreSQL" color="bg-neutral-600" />
                     </div>
                 </div>
                 <div className="bg-white flex flex-col rounded-3xl w-[50%] p-8 gap-3">
                     <div className="p-2 text-4xl text-darkBlue font-sans flex justify-end">
                         languages
                     </div>
-                    <div className="flex flex-row gap-3">
+                    <div className="flex flex-row gap-3 flex-wrap">
                         <Skill skill="python" color="bg-sky-800" />
                         <Skill skill="javascript" color="bg-fuchsia-500" />
                         <Skill skill="C++" color="bg-lime-800" />
